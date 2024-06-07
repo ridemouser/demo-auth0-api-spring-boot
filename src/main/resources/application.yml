@@ -1,0 +1,25 @@
+server:
+  port: 3000
+
+logging:
+  level:
+    root: TRACE
+    org:
+      apache:
+        tomcat:
+          util:
+            net:
+              NioEndpoint: WARN
+    org.springframework.web: TRACE
+    com.auth0.example: TRACE
+
+okta:
+  oauth2:
+    groupsClaim: permissions
+    issuer: https://dev-aq27eunqpe7z7unn.us.auth0.com/
+    client-id: xxxxxxxx
+    client-secret: xxxxxxx
+    audience: http://auth0-test-api/
+    post-logout-redirect-uri: "{baseUrl}"
+    authorization-grant-type: authorization_code
+    #scope: read:securities
