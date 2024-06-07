@@ -10,7 +10,7 @@
         <relativePath/>
     </parent>
     <groupId>org.example</groupId>
-    <artifactId>demo-autho-api-spring-boot</artifactId>
+    <artifactId>demo-auth0-api-spring-boot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
